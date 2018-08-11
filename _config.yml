@@ -21,6 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zizhujy
 github_username:  Jeff-Tian
+facebook_username:
+linkedin_username: jeff~tian
 
 # Build settings
 markdown: kramdown
@@ -39,3 +41,18 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+header_pages:
+- about.md
+- portfolio.md
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%Y-%m-%d %H:%M"
+
+disqus:
+  shortname: ggyy
+
+google_analytics: UA-123746004-1
+show_excerpts: true
