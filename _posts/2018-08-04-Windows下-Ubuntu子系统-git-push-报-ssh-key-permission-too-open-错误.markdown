@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows 下 Ubuntu 子系统 git push 报 ssh key permission too open 错误"
-date:   2018-08-05 29:40:06 +0800
+date:   2018-08-05 20:40:06 +0800
 categories: 程序员日常
 ---
 
