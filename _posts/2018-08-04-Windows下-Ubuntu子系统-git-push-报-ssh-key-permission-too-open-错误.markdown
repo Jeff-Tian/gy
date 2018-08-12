@@ -5,9 +5,6 @@ date:   2018-08-05 20:40:06 +0800
 categories: 程序员日常
 ---
 
-Windows 下 Ubuntu 子系统 git push 报 ssh key permission too open 错误
-===================
-
 # 症状
 我在 `Windows 10` 下安装了 `Ubuntu` 子系统，通过 `bash` 做 `git` 提交时，报错说 `/home/user/.ssh/id_rsa` 文件的权限为 `0777`，太开放了，不能用。从而引发代码提交失败。
 
