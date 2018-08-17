@@ -10,7 +10,7 @@ categories: 培训
 
 # SQLiGoT 智能检测 SQL 注入项目
 利用机器学习，自动分类好的 SQL 查询与恶意 SQL 查询
-你可以直接 [下载 演示文稿]({{ site.url }}/assets/train/SQLiGoT.pptx)
+你可以直接 [查看 演示文稿](https://view.officeapps.live.com/op/view.aspx?src={{ site.url | append: '/assets/train/SQLiGoT.pptx' | cgi_escape }})
 
 这是一个介绍性文章，不需要写代码。
 
@@ -25,11 +25,15 @@ categories: 培训
 - [第一次](https://mp.weixin.qq.com/s?__biz=MzI2ODYwMjg3NA==&mid=2247484265&idx=2&sn=39ab1acbc69630f2f1114dc9cbf58f9f&chksm=eaec5ffcdd9bd6ea60260dc7c4a329be452631565ab56467090f950d0acd798f232ee2f72848&mpshare=1&scene=24&srcid=0604b5SBfhi9Q6CPfLiB35ST#rd)
 - [第二次](https://mp.weixin.qq.com/s?__biz=MzI2ODYwMjg3NA==&mid=2247484412&idx=1&sn=34704f6bbc70f6243141a8158a3ebd98&chksm=eaec5f69dd9bd67f7d65f658ea098ccb1d1744a5caf558ef9fe4d25846d2fae1a074145d299c&mpshare=1&scene=24&srcid=0604JkDYfIVy41GqKfDNZfTb#rd)
 
+[查看 演示文稿](https://view.officeapps.live.com/op/view.aspx?src={{ 'https://raw.githubusercontent.com/Jeff-Tian/tic-tac-toe-ai/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%20or%20%E4%BA%BA%E5%B7%A5%E6%99%BA%E9%9A%9C%EF%BC%9F.pptx' | cgi_escape }})
+
 # 虚拟面试项目实践
 人脸识别的应用
 [源代码](https://github.com/JeffTrain/virtual-interview)
 
 这是一个实战项目，需要安装好 python, ffmpeg。
+
+[查看 演示文稿](https://view.officeapps.live.com/op/view.aspx?src={{ 'https://github.com/JeffTrain/virtual-interview/blob/master/%E8%99%9A%E6%8B%9F%E9%9D%A2%E8%AF%95%E5%85%A8%E6%A0%88%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B.pptx' | cgi_escape }})
 
 # 换脸项目实战
 人脸识别的应用
