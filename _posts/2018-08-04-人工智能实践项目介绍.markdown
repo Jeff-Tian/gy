@@ -10,7 +10,7 @@ categories: 培训
 
 # SQLiGoT 智能检测 SQL 注入项目
 利用机器学习，自动分类好的 SQL 查询与恶意 SQL 查询
-你可以直接 [查看 演示文稿](https://view.officeapps.live.com/op/view.aspx?src={{ site.url | append: '/assets/train/SQLiGoT.pptx' | cgi_escape }})
+你可以直接 [查看 演示文稿](https://view.officeapps.live.com/op/view.aspx?src={{ 'https://ggyy.pa-pa.me' | append: '/assets/train/SQLiGoT.pptx' | cgi_escape }})
 
 这是一个介绍性文章，不需要写代码。
 
@@ -33,7 +33,7 @@ categories: 培训
 
 这是一个实战项目，需要安装好 python, ffmpeg。
 
-[查看 演示文稿](https://view.officeapps.live.com/op/view.aspx?src={{ 'https://github.com/JeffTrain/virtual-interview/blob/master/%E8%99%9A%E6%8B%9F%E9%9D%A2%E8%AF%95%E5%85%A8%E6%A0%88%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B.pptx' | cgi_escape }})
+[查看 演示文稿](https://view.officeapps.live.com/op/view.aspx?src={{ 'https://raw.githubusercontent.com/JeffTrain/virtual-interview/master/%E8%99%9A%E6%8B%9F%E9%9D%A2%E8%AF%95%E5%85%A8%E6%A0%88%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B.pptx' | cgi_escape }})
 
 # 换脸项目实战
 人脸识别的应用
