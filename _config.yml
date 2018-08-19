@@ -49,10 +49,12 @@ header_pages:
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%Y-%m-%d %H:%M"
+  date_format: "%Y-%m-%d %H:%M (%Z)"
 
 #disqus:
 #  shortname: ggyy
 
 google_analytics: UA-123746004-1
 show_excerpts: true
+
+timezone: Asia/Shanghai
