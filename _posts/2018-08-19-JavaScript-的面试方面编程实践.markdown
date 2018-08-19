@@ -79,7 +79,8 @@ import AOP from './AOP'
 // 原有代码：
 function doSomething(){}
 
-// 加 log
+// 加 
+AOP.setBefore()
 doSomething = doSomething.before(()=>{
     logger.info('will do something...')
 })
@@ -93,7 +94,10 @@ export default class wechat{
 ```
 ```javascript
 import wechat from './wechat.js'
+import AOP from './AOP'
+
 // 通知拦截
+AOP.setBefore()
 wechat.sendTemplateMessage = wechat.sendTemplateMessage.beforeAsync(async (wechat_openid)=>{
     if(!inProduction || !(await getUserByOpenId(wechat_openid)).allowReceivingNotification){
         return false
@@ -113,6 +117,9 @@ async doSomething(userId){
 }
 
 // 新代码
+import AOP from './AOP'
+
+AOP.setAfter()
 doSomething = doSomething.after(async (userId)=>{
     await tagUserAsState(userId, 'new state')
 })
