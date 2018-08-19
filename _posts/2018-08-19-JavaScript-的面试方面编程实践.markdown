@@ -5,6 +5,8 @@ date:   2018-08-19 10:46:06 +0800
 categories: 程序员日常
 ---
 
+![AOP](http://pdowvgnvh.bkt.clouddn.com/image/png/1_DqyQINeHSSwfVN2dmlWhMQ.png)
+
 ### 为什么要在 JavaScript 中应用面向方面的编程？
 有一些代码逻辑，需要和业务逻辑分离出来，所以应用面向方面的编程比较自然。
 
