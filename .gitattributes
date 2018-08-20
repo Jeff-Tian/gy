@@ -1,6 +1,7 @@
 .gitattributes text eol=lf
 .gitignore text eol=lf
 *.md text eol=lf
+*.markdown text eol=lf
 *.html text eol=lf
 Gemfile text eol=lf
 Gemfile.lock eol=lf
