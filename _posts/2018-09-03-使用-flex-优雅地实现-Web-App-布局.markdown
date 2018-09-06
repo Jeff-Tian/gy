@@ -85,7 +85,7 @@ html, body, body > div {
 ```
 
 ### 使用这种布局的实际的例子：
-- [帕累托火焰](https://pareto-fire.pa-pa.me/)
+- [帕累托火焰](https://fire.pa-pa.me/)
 可能需要登录之后，才能看到这个布局
 - [BuzzBuzz English](http://past.buzzbuzzenglish.com/s/player?date=2017-08-24&cat=culture&level=B&lesson_id=b1fe0ea0-7e75-11e7-98fa-ed557983c686&video_path=/resources/buzz/smil/2017-07-24-B.json&new_words_path=/resources/buzz/newWords/2017-07-24-B.json&lesson_id=b1fe0ea0-7e75-11e7-98fa-ed557983c686)
 使用了这种布局的一个变体，没有头部，但是有一个固定高度的视频区，以及一个撑满剩下空间的字幕区，字幕少时也会占满额外空间，字幕多时会显示滚动条。
