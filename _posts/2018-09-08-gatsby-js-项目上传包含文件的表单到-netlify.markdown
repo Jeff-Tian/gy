@@ -7,7 +7,7 @@ categories: 程序员日常
 
 ### 背景
 一个全静态的基于 `gatsby js` 创建的网站，托管在 `netlify` 平台上，如何上传包含文件的表单呢？
-先参考了一篇[官方博客文章]（https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/），工作得很好，但是博客中的代码示例并没有展示文件上传功能。
+先参考了一篇[官方博客文章](https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/)，工作得很好，但是博客中的代码示例并没有展示文件上传功能。
 
 ### 官方博客中可以工作的示例代码
 
