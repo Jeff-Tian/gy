@@ -1,0 +1,41 @@
+---
+title: 思维定势一例
+layout: post
+date: '2018-09-20 19:09:06 +0800'
+categories: 程序员日常 
+---
+
+### 背景
+今天在写单元测试时，调用 `supertest` 的 `post` 方法时，`IDE` 智能提示显示它只有一个 `url` 参数。我以为是文档没有写全，因为我还要传其他数据呢，该从哪里传进去呢？
+
+这就是一个思维定势，来自平时使用 `fetch` 函数时，要传递的数据写在第二个参数 `options` 里。
+
+我决定看一下源代码，心想文档不给予传递其他数据怎么写的说明，看源代码总能找出来。然后看到这段代码：
+
+```javascript
+// supertest.js
+// ...
+ for (const method of methods) {
+    obj[method] = url => {
+      // support pathFor(url)
+      if (url[0] !== '/') {
+        const realUrl = app.router.pathFor(url);
+        if (!realUrl) throw new Error(`Can\'t find router:${url}, please check your \'app/router.js\'`);
+        url = realUrl;
+      }
+
+//      ...
+```
+我惊呆了，真的只接受一个参数！
+
+我只能去看 `supertest` [官方文档](https://github.com/visionmedia/supertest)，查看了 `post` 使用示例。发现是这样调用的：
+```javascript
+    request(app)
+      .post('/user')
+      .send('name=john') // x-www-form-urlencoded upload
+      .set('Accept', 'application/json')
+      //...
+```
+
+### 总结
+看完示例恍然大悟，原来数据通过后续 `send` 方法发出。原来传递数据不一定非得通过传进第二个参数，还可以通过返回一个能再次接收数据传输的对象来实现！这是个什么对象呢？哈哈哈，是一个发送 `http` 请求的 `request` 对象啦。
