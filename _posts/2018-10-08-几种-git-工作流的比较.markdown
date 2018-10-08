@@ -1,0 +1,79 @@
+---
+title: 几种 git 工作流的比较 
+layout: post
+date: '2018-10-08 11:23:57 +0800'
+categories: 程序员日常 
+---
+
+### 引言
+为了开发高质量的软件，我们需要能够跟踪所有的变化并且在需要时可以回滚。这正是版本控制系统（VCS）所做的事情。
+
+### 历史
+
+| 代            | 操 作 | 并 发 | 网 络 | 例 子 |
+|--------------|-------|------|------|------|
+|第一代|单文件|锁|中心化|RCS, SCCS|
+|第二代|多文件|合并后提交|中心化|Subversion, CVS, SourceSafe, Team Foundation Server|
+|第三代|多文件|提交后合并|分布式|Git, Mercurial, Bazaar|
+
+**趋势**：提高在项目中并行工作的能力。
+
+### 开发风格
+当前最流行的版本控制系统无疑是 Git，在 2016 年占据着 70% 的市场份额。
+
+Git 是随着 Linux 和开源项目的兴起而流行。目前最流行的在线公共项目存储站 Github 也助了 Git 一臂之力。
+
+- Github Flow
+在 Trunk-based 的基础上，增加了个人仓库和 Pull Request 合并代码的操作
+
+![Github 的开发风格]({{ site_url | append: '/assets/git-workflow/github.png' }})
+
+- Gitlab Flow
+
+Github Flow 的演进版本，强调了多环境部署和将仓库或分支与环境关联。
+
+- **Git Flow**
+
+一个主开发分支，开发者基于其创建特性分支再工作。完成工作后创建拉取请求。
+
+![Git Flow]({{ site_url | append: '/assets/git-workflow/git-flow.png' }})
+
+- **Trunk-based 开发工作流**
+
+所有开发者工作在同一个分支。
+
+![trunk-based]({{ site_url | append: '/assets/git-workflow/trunk-based.png' }})
+
+- OneFlow
+
+参考了 Trunk-based 的许多思想，对操作流程做了更严格的定义，增加了 Hotfix 分支等内容。
+
+- **AoneFlow**
+
+可以看到许多其他分支模式的影子。只使用三种分支类型：主干分支、特性分支、发布分支，以及三条基本规则：
+
+    - 规则一：开始工作前，从主干创建特性分支。
+
+    ![AoneFlow-1]({{ site_url | append: '/assets/git-workflow/Aoneflow-1.png' }})
+    - 规则二：通过合并特性分支，形成发布分支。
+
+    ![AoneFlow-2]({{ site_url | append: '/assets/git-workflow/Aoneflow-2.png' }})
+    - 规则三：发布到线上正式环境后，合并相应的发布分支到主干，在主干添加标签，同时删除该发布分支关联的特性分支。
+
+    ![AoneFlow-3]({{ site_url | append: '/assets/git-workflow/Aoneflow-3.png' }})
+
+### 比较
+|开发模式|优点|缺点|
+|-------|---|----|
+|Github Flow|-适合分布式团队||
+|Gitlab Flow|||
+|Git flow|- 适合开源项目<br />- 适合有很多初级开发者的团队 <br />- 适合已成型的产品|- 繁琐的合并规则 <br />- 使用起来不容易<br /> - 大量的合并冲突<br />- 对集成测试不友好 <br /> - 不适合初创公司 <br />- 不适应快速迭代 <br /> - 不适合几乎为高级开发者的团队 |
+|Trunk-based|- 易于持续集成<br />适合初创公司<br />- 适应快速迭代 <br /> - 适合由高级开发者组成的团队 |- 太多的团队同时工作在主干上，到发布时可能出现灾难。<br />- 对开发团队的能力要求高 <br /> - 不适合开源项目<br /> - 不适合用来管理大的团队|
+|OneFlow|||
+|AoneFlow|- 兼顾 Trunk-based 的“易于持续集成" 和 Git flow 的“易于管理需求"<br />- 规避了 Git flow 的繁文缛节 ||
+
+
+### 参考文献
+[1] [Trunk-based Development vs. Git Flow](https://www.toptal.com/software/trunk-based-development-git-flow)
+
+[2] [在阿里，我们如何管理代码分支？](https://yq.aliyun.com/articles/573549)
