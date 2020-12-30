@@ -19,9 +19,6 @@ permalink: /about/
 |音视频  |[视频字幕 ASS 序列化](https://www.npmjs.com/package/ass-serialize)|将 json 表示的视频字幕结构序列化成 ass 格式的文本文件|
 |        |[在线视频字幕 ASS 编辑器](https://ass-editor.pa-pa.me/)|在线编辑视频字幕并保存为 ass 文本文件|
 
-###  我的微信公众号
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2OTQxMzI1XX0=
+eyJoaXN0b3J5IjpbNTAyNzQwMDcwLDgzNjk0MTMyNV19
 -->
